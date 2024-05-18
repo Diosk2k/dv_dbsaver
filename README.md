@@ -39,7 +39,9 @@ The script can be configured via the `config.ini` file located in the same direc
 To create custom locales, you can modify the `custom_locale.py` file. This file contains a dictionary named `locales` with language codes as keys and corresponding translation dictionaries as values. You can add new languages or modify existing translations as needed.
 
 ## Author
-This script was written by DV DEV.
+- [@Diosk](https://github.com/Diosk2k)
 
 ## Need Help?
 For assistance or questions, please join our Discord server.
+
+
