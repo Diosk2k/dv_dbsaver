@@ -1,32 +1,32 @@
 @echo off
-REM Installiere erforderliche Python-Module für das Skript
+REM Install required Python modules for the script
 
-REM Installiere mysql-connector-python
+REM Install mysql-connector-python
 pip install mysql-connector-python
 
-REM Installiere configparser
+REM Install configparser
 pip install configparser
 
-REM Installiere requests
+REM Install requests
 pip install requests
 
-REM Gib eine Meldung aus, wenn die Installation abgeschlossen ist
-echo Erforderliche Python-Module wurden installiert.
+REM Print a message when installation is completed
+echo Required Python modules have been installed.
 
-REM Überprüfe, ob der Ordner "backups" vorhanden ist. Wenn nicht, erstelle den Ordner.
+REM Check if the "backups" folder exists. If not, create the folder.
 if not exist "%~dp0backups" (
     mkdir "%~dp0backups"
-    echo Ordner "backups" wurde erstellt.
+    echo Folder "backups" has been created.
 ) else (
-    echo Ordner "backups" ist bereits vorhanden.
+    echo Folder "backups" already exists.
 )
 
-REM Starte das Python-Skript
+REM Start the Python script
 cd /d "%~dp0"
 python backup_script.py
 
-REM Warte auf Benutzerinteraktion, bevor das Fenster geschlossen wird
+REM Wait for user interaction before closing the window
 pause
 
-REM Warte 5 Sekunden, damit der Benutzer die Nachricht sehen kann, bevor das Fenster geschlossen wird
+REM Wait for 5 seconds to allow the user to see the message before closing the window
 timeout /t 5 >nul
