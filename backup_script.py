@@ -109,11 +109,11 @@ def main():
         embed_settings = embedding_config["EMBEDDING"]
 
     if language not in locales:
-        print(f"Warnung: Sprache '{language}' wird nicht unterstützt. Standardmäßig ist Englisch.")
+        print(f"Warning: Language '{language}' is not supported. Default is English.")
         language = "en"
 
     print_start_animation()
-    print("Datenbank-Backup läuft...")
+    print("Database backup is running...")
 
     while True:
         backup_database(host, username, password, database_name, backup_folder, dump_path, language, webhook_enable, webhook_url, embed_settings)
