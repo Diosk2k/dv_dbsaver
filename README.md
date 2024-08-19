@@ -6,6 +6,7 @@ This script automates the installation of required Python modules and executes a
 ## Requirements
 - Python 3
 - pip package manager
+- Windows or Linux
 
 ## Configuration
 The script can be configured via the `config.ini` file located in the same directory as the script. Here are the configurable options:
